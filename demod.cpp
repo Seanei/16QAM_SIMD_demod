@@ -1,6 +1,6 @@
 #include <cmath>
 
-const double STEPFORQAM16 = 1/sqrt(10);
+const float STEPFORQAM16 = 1/sqrt(10);
 
 template <typename T> int sign(T val) {
     return (T(0) < val) - (val < T(0)); 

@@ -9,6 +9,7 @@
                 "-march=native",
                 "-g",
                 "-std=c++17",
+                "-O3",
                 "${file}",
                 "-o",
                 "${fileDirname}/${fileBasenameNoExtension}"

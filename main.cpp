@@ -52,14 +52,14 @@ int main(){
                 auto end = std::chrono::high_resolution_clock::now();
                 duration_demod += std::chrono::duration_cast<std::chrono::nanoseconds>(end - start);
             }
-            /*
+            
             {
                 auto start = std::chrono::high_resolution_clock::now();
                 Demodulate_no_if(test, demodulated_no_if, noise_var);
                 auto end = std::chrono::high_resolution_clock::now();
                 duration_demod_if += std::chrono::duration_cast<std::chrono::nanoseconds>(end - start);
             }
-            */
+            
             {
                 auto start = std::chrono::high_resolution_clock::now();
                 Demodulate16QAMSIMD(test_for_simd_i, test_for_simd_q, demodulated_SIMD);
